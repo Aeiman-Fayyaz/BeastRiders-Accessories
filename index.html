@@ -29,11 +29,16 @@
             },
         };
     </script>
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- Navbar Start -->
+    <div class="bg-primary-crimson text-xl text-center py-2 sticky top-0 transition-all duration-300">
+        <h1 class="text-secondary-silver">Avail this Limited Time Offer 30% OFF </h1>
+    </div>
     <header class="text-primary-black bg-secondary-silver body-font sticky top-0 z-50 transition-all duration-300"
         id="navbar">
         <div class="container mx-auto flex items-center justify-between">
@@ -63,7 +68,7 @@
             <div class="hidden md:flex items-center space-x-4">
                 <button
                     class="inline-flex items-center text-secondary-silver bg-primary-crimson border-0 py-2 px-4 hover:bg-secondary-darkgray rounded-lg text-base transition-colors duration-200">
-                    Login
+                    <a href="#login">Login</a>
                     <img src="./assets/login-arrow.png" style="height: 20px; width: 30px;" alt="">
                 </button>
 
@@ -153,40 +158,59 @@
     <!-- About us Section Start -->
     <section id="about" class="body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <!-- Image with AOS Animation -->
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0" data-aos="fade-right"
+                data-aos-duration="800" data-aos-easing="ease-out-cubic">
                 <img class="object-cover object-center rounded" alt="hero" src="./assets/about-section.jpeg">
             </div>
-            <div
-                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
-                <h1 class="title-font sm:text-4xl text-3xl mb-3 font-medium text-secondary-darkgray">ABOUT
-                    <div class="h-1 bg-secondary-silver rounded overflow-hidden">
+
+            <!-- Content with AOS Animations -->
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center">
+                <!-- Title with animation -->
+                <h1 class="title-font sm:text-4xl text-3xl mb-3 font-medium text-secondary-darkgray" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="100">
+                    ABOUT
+                    <div class="h-1 bg-secondary-silver rounded overflow-hidden" data-aos="fade-left"
+                        data-aos-duration="800" data-aos-delay="200">
                         <div class="w-24 h-full bg-primary-crimson"></div>
                     </div>
-                    <br class="hidden lg:inline-block"><span class="text-primary-crimson">Beast Riders</span>
+                    <br class="hidden lg:inline-block">
+                    <span class="text-primary-crimson" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="300">Beast Riders</span>
                 </h1>
-                <p class="mb-2 leading-relaxed">Welcome to <span class="text-primary-crimson font-bold"> Beast
-                        Riders,</span> your trusted destination for premium heavy bike
-                    accessories.
+
+                <!-- Paragraph 1 -->
+                <p class="mb-2 leading-relaxed" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    Welcome to <span class="text-primary-crimson font-bold"> Beast Riders,</span> your trusted
+                    destination for premium heavy bike accessories.
                 </p>
-                <p class="mb-2 leading-relaxed">
+
+                <!-- Paragraph 2 -->
+                <p class="mb-2 leading-relaxed" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
                     We are dedicated to providing high-quality, durable, and performance-driven accessories that enhance
                     your ride and elevate your biking experience.
                 </p>
-                <p class="mb-2 leading-relaxed">
+
+                <!-- Paragraph 3 -->
+                <p class="mb-2 leading-relaxed" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
                     Our platform is exclusively focused on heavy bike accessories — nothing else. Every product is
                     hand-picked, quality-checked, and sourced from reliable suppliers to ensure you receive only genuine
                     and long-lasting items.
                 </p>
 
-                <p class="mb-5 leading-relaxed">
+                <!-- Paragraph 4 -->
+                <p class="mb-5 leading-relaxed" data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">
                     To make your shopping experience easier, we offer brand-specific categories, allowing you to quickly
                     find accessories that match your exact bike model. Whether you ride a Honda, Suzuki, Yamaha,
                     Kawasaki, BMW, KTM, or any other superbike, you will find a curated collection tailored for your
-                    machine.</p>
-                <div class="flex justify-center">
+                    machine.
+                </p>
+
+                <!-- Button with animation -->
+                <div class="flex justify-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
                     <button class="inline-flex text-secondary-silver bg-primary-crimson border-0 py-2 px-6 focus:outline-none 
-                        hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent rounded 
-                        text-lg transition duration-300 transform hover:scale-105">Know More</button>
+                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent rounded 
+                    text-lg transition duration-300 transform hover:scale-105">Know More</button>
                 </div>
             </div>
         </div>
@@ -194,73 +218,91 @@
     <!-- About us Section End -->
 
     <!-- We Deal In Section Start -->
-    <section class="body-font">
+    <section id="weDealIn" class="body-font">
         <div class="container px-5 pb-12 mx-auto">
-            <div class="text-center mb-20">
-                <span class="sm:text-2xl text-xl mb-3 text-primary-crimson">Beast Riders</span><br>
-                <h1 class="title-font sm:text-4xl text-3xl mb-3 font-medium text-secondary-darkgray">Deals In</h1>
+            <!-- Header with animation -->
+            <div class="text-center mb-20" data-aos="fade-up" data-aos-duration="600">
+                <span class="sm:text-2xl text-xl mb-3 text-primary-crimson" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="100">Beast Riders</span><br>
+                <h1 class="title-font sm:text-4xl text-3xl mb-3 font-medium text-secondary-darkgray" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="150">Deals In</h1>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Kawasaki -->
+                <!-- Kawasaki Card -->
                 <div class="p-6 flex flex-col text-center items-center bg-primary-black text-secondary-silver rounded-xl 
-                shadow-[10px_5px_5px_0px_rgba(0,_0,_0,_0.5)]">
+                shadow-[10px_5px_5px_0px_rgba(0,_0,_0,_0.5)]" data-aos="zoom-in" data-aos-duration="700"
+                    data-aos-delay="200" data-aos-easing="ease-out-cubic">
 
-                    <div class="w-20 h-20 mt-5 flex items-center justify-center rounded-full bg-secondary-silver mb-5">
+                    <div class="w-20 h-20 mt-5 flex items-center justify-center rounded-full bg-secondary-silver mb-5"
+                        data-aos="flip-left" data-aos-duration="800" data-aos-delay="250">
                         <img src="./assets/kawasaki-logo.png" alt="">
                     </div>
 
-                    <h2 class="title-font sm:text-2xl text-xl font-medium text-primary-crimson mb-3">Kawasaki</h2>
-                    <p class="leading-relaxed text-base text-start">
+                    <h2 class="title-font sm:text-2xl text-xl font-medium text-primary-crimson mb-3" data-aos="fade-up"
+                        data-aos-duration="600" data-aos-delay="300">Kawasaki</h2>
+                    <p class="leading-relaxed text-base text-start" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="350">
                         Kawasaki Heavy Industries Ltd. is a Japanese public multinational corporation manufacturer of
                         motorcycles, engines, heavy equipment.
                     </p>
 
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
                     hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                    transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="400">
                         <a href="#accessories">See Accessories</a>
                     </button>
                 </div>
 
-                <!-- Yamaha -->
+                <!-- Yamaha Card -->
                 <div class="p-6 flex flex-col text-center items-center bg-primary-black text-secondary-silver rounded-xl 
-                shadow-[10px_5px_5px_0px_rgba(0,_0,_0,_0.5)]">
+                shadow-[10px_5px_5px_0px_rgba(0,_0,_0,_0.5)]" data-aos="zoom-in" data-aos-duration="700"
+                    data-aos-delay="300" data-aos-easing="ease-out-cubic">
 
-                    <div class="w-20 h-20 mt-5 flex items-center justify-center rounded-full bg-secondary-silver mb-5">
+                    <div class="w-20 h-20 mt-5 flex items-center justify-center rounded-full bg-secondary-silver mb-5"
+                        data-aos="flip-left" data-aos-duration="800" data-aos-delay="350">
                         <img src="./assets/yamaha-logo.png" alt="">
                     </div>
 
-                    <h2 class="title-font sm:text-2xl text-xl font-medium text-primary-crimson mb-3">Yamaha</h2>
-                    <p class="leading-relaxed text-base text-start">
+                    <h2 class="title-font sm:text-2xl text-xl font-medium text-primary-crimson mb-3" data-aos="fade-up"
+                        data-aos-duration="600" data-aos-delay="400">Yamaha</h2>
+                    <p class="leading-relaxed text-base text-start" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="450">
                         Yamaha Motor Co., Ltd. is a Japanese multinational conglomerate mobility manufacturer.
                     </p>
 
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
                     hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                    transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="500">
                         <a href="#accessories">See Accessories</a>
                     </button>
                 </div>
 
-                <!-- Honda -->
+                <!-- Honda Card -->
                 <div class="p-6 flex flex-col text-center items-center bg-primary-black text-secondary-silver rounded-xl 
-                shadow-[10px_5px_5px_0px_rgba(0,_0,_0,_0.5)]">
+                shadow-[10px_5px_5px_0px_rgba(0,_0,_0,_0.5)]" data-aos="zoom-in" data-aos-duration="700"
+                    data-aos-delay="400" data-aos-easing="ease-out-cubic">
 
-                    <div class="w-20 h-20 mt-5 flex items-center justify-center rounded-full bg-secondary-silver mb-5">
+                    <div class="w-20 h-20 mt-5 flex items-center justify-center rounded-full bg-secondary-silver mb-5"
+                        data-aos="flip-left" data-aos-duration="800" data-aos-delay="450">
                         <img src="./assets/honda-logo.png" style="width:60px" alt="">
                     </div>
 
-                    <h2 class="title-font sm:text-2xl text-xl font-medium text-primary-crimson mb-3">Honda</h2>
-                    <p class="leading-relaxed text-base text-start">
+                    <h2 class="title-font sm:text-2xl text-xl font-medium text-primary-crimson mb-3" data-aos="fade-up"
+                        data-aos-duration="600" data-aos-delay="500">Honda</h2>
+                    <p class="leading-relaxed text-base text-start" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="550">
                         Honda Motor Co., Ltd., commonly known as Honda, is a Japanese automotive manufacturer
                         headquartered at the Toranomon Alcea Tower.
                     </p>
 
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
                     hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                    transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="600">
                         <a href="#accessories">See Accessories</a>
                     </button>
                 </div>
@@ -271,18 +313,23 @@
     <!-- We Deal In Section End -->
 
     <!-- Accessories Section Start -->
-    <section class="text-secondary-darkgray bg-secondary-silver body-font">
-        <!-- Performance & Engine Upgrades -->
-        <div class="container px-5 pb-12 mx-auto">
+    <section id="accessories" class="text-secondary-darkgray bg-secondary-silver body-font">
+        <!-- Kawasaki Performance & Engine Upgrades -->
+        <div class="container px-5 pb-12 mx-auto" data-aos="fade-up" data-aos-duration="600"
+            data-aos-easing="ease-out-cubic">
             <div class="text-center pt-10 mb-16">
-                <h1 class="title-font sm:text-4xl text-3xl mb-3 font-medium text-secondary-darkgray">
+                <h1 class="title-font sm:text-4xl text-3xl mb-3 font-medium text-secondary-darkgray" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="100">
                     Accessories
                 </h1>
-                <span class="sm:text-2xl text-xl text-primary-crimson font-bold">Kawasaki</span><br>
-                <span class="sm:text-2xl text-xl text-primary-crimson">Performance & Engine Upgrades</span>
+                <span class="sm:text-2xl text-xl text-primary-crimson font-bold" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="150">KAWASAKI</span><br>
+                <span class="sm:text-2xl text-xl text-primary-crimson" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="200">Performance & Engine Upgrades</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
                     <div class="rounded-lg h-64 overflow-hidden">
                         <img alt="kawasaki-quick-shifters" class="object-cover object-center h-full w-full"
                             src="./assets/kawasaki-quick-shifters.jpeg">
@@ -294,12 +341,13 @@
                     </p>
                     <h4 class="text-xl font-medium text-primary-crimson mt-4">$556.39</h4>
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
-                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
                         Add to Cart
                     </button>
                 </div>
-                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
                     <div class="rounded-lg h-64 overflow-hidden">
                         <img alt="kawasaki-BMC-air-filters" class="object-cover object-center h-full w-full"
                             src="./assets/kawasaki-BMC-air-filters.jpeg">
@@ -311,12 +359,13 @@
                     </p>
                     <h4 class="text-xl font-medium text-primary-crimson mt-4">$108.90</h4>
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
-                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
                         Add to Cart
                     </button>
                 </div>
-                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="350">
                     <div class="rounded-lg h-64 overflow-hidden">
                         <img alt="kawasaki-radiator-guards" class="object-cover object-center h-full w-full"
                             src="./assets/kawasaki-radiator-guards.jpeg">
@@ -328,21 +377,24 @@
                     </p>
                     <h4 class="text-xl font-medium text-primary-crimson mt-4">$85.15</h4>
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
-                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
                         Add to Cart
                     </button>
                 </div>
-
             </div>
         </div>
-        <!-- Safety & Protection -->
-        <div class="container px-5 pb-12 mx-auto">
+
+        <!-- Kawasaki Safety & Protection -->
+        <div class="container px-5 pb-12 mx-auto" data-aos="fade-up" data-aos-duration="600"
+            data-aos-easing="ease-out-cubic" data-aos-offset="200">
             <div class="text-center pt-10 mb-16">
-                <span class="sm:text-2xl text-xl text-primary-crimson">Safety & Protection</span>
+                <span class="sm:text-2xl text-xl text-primary-crimson" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="100">Safety & Protection</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
                     <div class="rounded-lg h-64 overflow-hidden">
                         <img alt="kawasaki-frame-sliders" class="object-cover object-center h-full w-full"
                             src="./assets/kawasaki-frame-sliders.jpeg">
@@ -354,29 +406,31 @@
                     </p>
                     <h4 class="text-xl font-medium text-primary-crimson mt-4">$273.05</h4>
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
-                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
                         Add to Cart
                     </button>
                 </div>
-                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                     <div class="rounded-lg h-64 overflow-hidden">
                         <img alt="kawasaki-brake-clutch-levers" class="object-cover object-center h-full w-full"
                             src="./assets/kawasaki-brake-clutch-levers.webp">
                     </div>
-                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Kawasaki Brake/Clutch Levers</h2>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Brake/Clutch Levers</h2>
                     <p class="text-base text-secondary-silver leading-relaxed mt-2">
                         Evotech Performance manufacture the ultimate in motorcycle performance, styling and crash
                         protection accessories.
                     </p>
                     <h4 class="text-xl font-medium text-primary-crimson mt-4"> $44.98</h4>
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
-                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
                         Add to Cart
                     </button>
                 </div>
-                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
                     <div class="rounded-lg h-64 overflow-hidden">
                         <img alt="kawasaki-brake-guard" class="object-cover object-center h-full w-full"
                             src="./assets/kawasaki-brake-guard.webp">
@@ -388,77 +442,920 @@
                     </p>
                     <h4 class="text-xl font-medium text-primary-crimson mt-4">$46.60</h4>
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
-                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
                         Add to Cart
                     </button>
                 </div>
-
             </div>
         </div>
-        <!-- Aesthetic & Styling -->
-        <div class="container px-5 pb-12 mx-auto">
+
+        <!-- Kawasaki Aesthetic & Styling -->
+        <div class="container px-5 pb-12 mx-auto" data-aos="fade-up" data-aos-duration="600"
+            data-aos-easing="ease-out-cubic" data-aos-offset="200">
             <div class="text-center pt-10 mb-16">
-                <span class="sm:text-2xl text-xl text-primary-crimson">Aesthetic & Styling</span>
+                <span class="sm:text-2xl text-xl text-primary-crimson" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="100">Aesthetic & Styling</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
                     <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="kawasaki-frame-sliders" class="object-cover object-center h-full w-full"
-                            src="./assets/kawasaki-frame-sliders.jpeg">
+                        <img alt="kawasaki-decal-kits" class="object-cover object-center h-full w-full"
+                            src="./assets/kawasaki-decal-kits.png">
                     </div>
-                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Frame Sliders</h2>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Decal Kits</h2>
                     <p class="text-base text-secondary-silver leading-relaxed mt-2">
-                        Help protect your engine shrouds from tip-over damage with this Frame Slider Set. High-density
-                        black ABS plastic Frame Sliders.
+                        Get your Kawasaki motocross graphics. Superior print quality and lasting
+                        durability. Customise your favourite Kawasaki MX graphics kit now.
                     </p>
-                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$273.05</h4>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$230.00</h4>
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
-                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
                         Add to Cart
                     </button>
                 </div>
-                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                     <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="kawasaki-brake-clutch-levers" class="object-cover object-center h-full w-full"
-                            src="./assets/kawasaki-brake-clutch-levers.webp">
+                        <img alt="kawasaki-wheel-stripes" class="object-cover object-center h-full w-full"
+                            src="./assets/kawasaki-wheel-stripes.webp">
                     </div>
-                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Kawasaki Brake/Clutch Levers</h2>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Wheel Stripes</h2>
                     <p class="text-base text-secondary-silver leading-relaxed mt-2">
-                        Evotech Performance manufacture the ultimate in motorcycle performance, styling and crash
-                        protection accessories.
+                        Make your bike stand out day and night with these reflective wheel stickers! The pre-curved
+                        design is specifically shaped to fit .
                     </p>
-                    <h4 class="text-xl font-medium text-primary-crimson mt-4"> $44.98</h4>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$515.20</h4>
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
-                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
                         Add to Cart
                     </button>
                 </div>
-                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
                     <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="kawasaki-brake-guard" class="object-cover object-center h-full w-full"
-                            src="./assets/kawasaki-brake-guard.webp">
+                        <img alt="kawasaki-tank-pads" class="object-cover object-center h-full w-full"
+                            src="./assets/kawasaki-tank-pads.jpeg">
                     </div>
-                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Brake Guard</h2>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Tank Pads</h2>
                     <p class="text-base text-secondary-silver leading-relaxed mt-2">
-                        Aerodynamic design for this high resistance injected plastic lever guard. A S2 Concept patented
-                        design developped to sustain racing.
+                        Fashion design pads to decorate your motorcycle. Our motorcycle stickers from BIKE-label protect
+                        your paint from scratches.
                     </p>
-                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$46.60</h4>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$95.16</h4>
                     <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
-                    hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
-                    transition duration-300 transform hover:scale-105">
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
                         Add to Cart
                     </button>
                 </div>
+            </div>
+        </div>
 
+        <!-- Yamaha Performance & Engine Upgrade -->
+        <div class="container px-5 pb-12 mx-auto" data-aos="fade-up" data-aos-duration="600"
+            data-aos-easing="ease-out-cubic" data-aos-offset="200">
+            <div class="text-center pt-10 mb-16">
+                <span class="sm:text-2xl text-xl text-primary-crimson font-bold" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="100">YAMAHA</span><br>
+                <span class="sm:text-2xl text-xl text-primary-crimson" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="150">Performance & Engine Upgrades</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="yamaha-power-commander" class="object-cover object-center h-full w-full"
+                            src="./assets/yamaha-power-commander.jpeg">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Power Commander</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        This power commander tuner can easily and effectively optimize your air/fuel ratio without
+                        directly changing the ECU.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$444.00</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="kawasaki-BMC-air-filters" class="object-cover object-center h-full w-full"
+                            src="./assets/yamaha-engine-crash-guards.jpg">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Engine Crash Guards</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        Manufactured of high quality steel pipes, wall thickness 1.5 mm and protected by a polymer
+                        coating.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$313.45</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="yamaha-exhaust-systems" class="object-cover object-center h-full w-full"
+                            src="./assets/yamaha-exhaust-systems.webp">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Exhaust Systems</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        Exhaust Systems high mount exhaust for 50cc motorbikes with Minarelli AM6 engine. The system was
+                        specially developed for the Stage 6.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$799</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Yamaha Comfort & Ergonomics -->
+        <div class="container px-5 pb-12 mx-auto" data-aos="fade-up" data-aos-duration="600"
+            data-aos-easing="ease-out-cubic" data-aos-offset="200">
+            <div class="text-center pt-10 mb-16">
+                <span class="sm:text-2xl text-xl text-primary-crimson" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="100">Comfort & Ergonomics</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="yamaha-seat-cowls" class="object-cover object-center h-full w-full"
+                            src="./assets/yamaha-seat-cowls.jpeg">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Seat Cowl</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        The stylish and supportive Rear Seat Cowl transforms your bike into a single-seater for a sleek
+                        look by easily replacing the passenger seat.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$179.99</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="yamaha-rider-footpegs" class="object-cover object-center h-full w-full"
+                            src="./assets/yamaha-rider-footpegs.jpg">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Rider Footpegs</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        Lightweight aluminum; CNC machined; Increased grip; Black mounting adapters included specific
+                        for: Yamaha
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$372</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="yamaha-heated-grips" class="object-cover object-center h-full w-full"
+                            src="./assets/yamaha-heated-grips.jpg">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Heated Grips</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        Fully integrated design · Ensures warm hands when riding in cold weather conditions · Includes
+                        temperature control button.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$119.99</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Honda Electrical & Tech -->
+        <div class="container px-5 pb-12 mx-auto" data-aos="fade-up" data-aos-duration="600"
+            data-aos-easing="ease-out-cubic" data-aos-offset="200">
+            <div class="text-center pt-10 mb-16">
+                <span class="sm:text-2xl text-xl text-primary-crimson font-bold" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="100">HONDA</span><br>
+                <span class="sm:text-2xl text-xl text-primary-crimson" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="150">Electrical & Tech</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="honda-USB-chargers" class="object-cover object-center h-full w-full"
+                            src="./assets/honda-USB-chargers.webp">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">USB Charger</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        Metal Mobile Holders which can survive through tough terrains and mobile chargers with wide
+                        range of features and charging capacity.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$56.95</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="honda-LED-light-kits" class="object-cover object-center h-full w-full"
+                            src="./assets/honda-LED-light-kits.jpg">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">LED Light Kits</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        Motorcycle RGB LED Light Kits with APP/RF Remote, Dual Zone Strip Lights with Brake Turn Signal,
+                        12V Waterproof Multi-Color Motorcycle.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$189.34</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="honda-battery-tenders" class="object-cover object-center h-full w-full"
+                            src="./assets/honda-battery-tenders.webp">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Battery Tenders</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        The ultimate battery maintainer that prolongs battery life. Charges both 12V lead-acid and
+                        lithium batteries with automatic program.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$129.95</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Honda Luggage & Storage -->
+        <div class="container px-5 pb-12 mx-auto" data-aos="fade-up" data-aos-duration="600"
+            data-aos-easing="ease-out-cubic" data-aos-offset="200">
+            <div class="text-center pt-10 mb-16">
+                <span class="sm:text-2xl text-xl text-primary-crimson" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="100">Luggage & Storage</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="honda-tank-bags" class="object-cover object-center h-full w-full"
+                            src="./assets/honda-tank-bags.jpg">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Tank Bags</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        Motorcycle Tank Bag 5L-6.5L with Strong Magnetic Quick Release Magnetic Tank Bag with Rain
+                        Cover.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$78.99</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="honda-top-cases" class="object-cover object-center h-full w-full"
+                            src="./assets/honda-top-cases.png">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Top Cases</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        This pack allows you to get a 50l top-case (capacity for two helmets) at a reduced price,
+                        including its decorative accessories.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4">$99.95</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="p-4 border-2 border-primary-crimson rounded-2xl bg-primary-black shadow-md"
+                    data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="honda-cargo-nets" class="object-cover object-center h-full w-full"
+                            src="./assets/honda-cargo-nets.jpeg">
+                    </div>
+                    <h2 class="text-xl text-primary-crimson mt-5 font-bold">Cargo Nets</h2>
+                    <p class="text-base text-secondary-silver leading-relaxed mt-2">
+                        These accessories are not only functional but also versatile, offering multiple configurations
+                        to accommodate various cargo sizes and types.
+                    </p>
+                    <h4 class="text-xl font-medium text-primary-crimson mt-4"> $20.97</h4>
+                    <button class="text-secondary-silver mt-6 bg-primary-crimson py-2 px-6 rounded text-lg 
+                hover:text-primary-crimson hover:border-2 hover:border-primary-crimson hover:bg-transparent 
+                transition duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
             </div>
         </div>
     </section>
-
     <!-- Accessories Section End -->
+
+    <!-- Login Section Start -->
+    <section id="login" class="text-gray-700 body-font bg-gray-50 lg:ps-[170px]">
+        <div class="container px-5 py-12 mx-auto flex flex-wrap items-center">
+            <!-- Left Content -->
+            <div class="lg:w-2/5 md:w-1/2 md:pr-12 lg:pr-16 pr-0 mb-10 md:mb-0" data-aos="fade-right"
+                data-aos-duration="700" data-aos-easing="ease-out-cubic">
+                <h1 class="title-font font-bold text-3xl md:text-4xl text-gray-900 mb-6" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="100">
+                    Welcome Back to <span class="text-primary-crimson">Beast Riders</span>
+                </h1>
+                <p class="leading-relaxed text-gray-600 mb-6" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="150">
+                    Log in to access your account, track your orders, manage your wishlist, and explore exclusive offers
+                    for our premium bike collection.
+                </p>
+                <div class="bg-secondary-silver p-6 rounded-lg border-l-4 border-primary-crimson" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="200">
+                    <h3 class="font-semibold text-lg text-gray-900 mb-3" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="250">Member Benefits:</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                            <svg class="w-5 h-5 text-primary-crimson mr-2 mt-0.5" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Track your orders & delivery status
+                        </li>
+                        <li class="flex items-start" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
+                            <svg class="w-5 h-5 text-primary-crimson mr-2 mt-0.5" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Exclusive member discounts & offers
+                        </li>
+                        <li class="flex items-start" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                            <svg class="w-5 h-5 text-primary-crimson mr-2 mt-0.5" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Save bikes & accessories to wishlist
+                        </li>
+                        <li class="flex items-start" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+                            <svg class="w-5 h-5 text-primary-crimson mr-2 mt-0.5" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Priority support & early access to new arrivals
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <div class="lg:w-2/5 md:w-1/2 bg-white rounded-xl shadow-lg p-8 flex flex-col w-full" data-aos="fade-left"
+                data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-delay="200">
+                <div class="flex items-center mb-8" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                        <img src="./assets/beast-riders-logo.png" style="height: 60px; width: 50px;"
+                            alt="Beast Riders Logo">
+                    </div>
+                    <div>
+                        <h2 class="text-gray-900 text-2xl font-bold">Member Login</h2>
+                        <p class="text-sm text-gray-500">Access your Beast Riders account</p>
+                    </div>
+                </div>
+
+                <form class="space-y-6">
+                    <!-- Email Field -->
+                    <div class="relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <div class="relative">
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-50 rounded-lg border border-gray-300 focus:border-primary-crimson focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-3 px-4 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="your.email@example.com" required>
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                                <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                    </path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
+                        <div class="flex justify-between items-center mb-2">
+                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                            <a href="#"
+                                class="text-sm font-medium text-primary-crimson hover:text-red-700 transition-colors duration-200">Forgot
+                                password?</a>
+                        </div>
+                        <div class="relative">
+                            <input type="password" id="password" name="password"
+                                class="w-full bg-gray-50 rounded-lg border border-gray-300 focus:border-primary-crimson focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-3 px-4 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="••••••••" required>
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                                <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Remember Me -->
+                    <div class="flex items-center mb-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                        <input id="remember-me" name="remember-me" type="checkbox"
+                            class="h-4 w-4 text-primary-crimson focus:ring-primary-crimson border-gray-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-gray-700">
+                            Keep me logged in
+                        </label>
+                    </div>
+
+                    <!-- Login Button -->
+                    <button type="submit"
+                        class="w-full text-white bg-primary-crimson border-0 py-3 px-8 focus:outline-none hover:bg-red-700 rounded-lg text-lg font-semibold transition-colors duration-200 flex items-center justify-center"
+                        data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+                        Login
+                        <img src="./assets/login-arrow.png" style="height: 20px; width: 30px;" class="ml-2" alt="">
+                    </button>
+                </form>
+
+                <!-- Sign Up & Social Login -->
+                <div class="mt-8 pt-6 border-t border-gray-200">
+                    <p class="text-center text-gray-600 text-sm" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="500">
+                        Don't have an account?
+                        <a href="#"
+                            class="font-semibold text-primary-crimson hover:text-red-700 ml-1 transition-colors duration-200">
+                            Sign up now
+                        </a>
+                    </p>
+
+                    <div class="mt-6">
+                        <p class="text-center text-gray-500 text-sm mb-3" data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="550">Or continue with</p>
+                        <div class="flex justify-center space-x-4">
+                            <button
+                                class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-primary-crimson transition-colors duration-200"
+                                data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z">
+                                    </path>
+                                    <path
+                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z">
+                                    </path>
+                                    <path
+                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z">
+                                    </path>
+                                    <path
+                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <button
+                                class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-primary-crimson transition-colors duration-200"
+                                data-aos="zoom-in" data-aos-duration="600" data-aos-delay="650">
+                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <button
+                                class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-primary-crimson transition-colors duration-200"
+                                data-aos="zoom-in" data-aos-duration="600" data-aos-delay="700">
+                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Login Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="text-gray-700 body-font relative bg-gray-200 py-16">
+        <div class="container px-5 py-12 mx-auto">
+            <!-- Header -->
+            <div class="flex flex-col text-center w-full mb-12" data-aos="fade-up" data-aos-duration="600"
+                data-aos-easing="ease-out-cubic">
+                <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="100">Get In Touch</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="150">
+                    Have questions about our bikes, accessories, or services? We're here to help. Reach out to us and
+                    we'll get back to you as soon as possible.
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:w-3/4 md:w-2/3 mx-auto" data-aos="fade-up" data-aos-duration="700"
+                data-aos-easing="ease-out-cubic" data-aos-delay="200">
+                <div class="flex flex-wrap -m-2">
+                    <!-- Name Field -->
+                    <div class="p-2 w-full md:w-1/2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-white rounded-lg border border-gray-300 focus:border-primary-crimson focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-3 px-4 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="John Doe">
+                        </div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="p-2 w-full md:w-1/2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-white rounded-lg border border-gray-300 focus:border-primary-crimson focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-3 px-4 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="john@example.com">
+                        </div>
+                    </div>
+
+                    <!-- Phone Field -->
+                    <div class="p-2 w-full md:w-1/2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
+                        <div class="relative">
+                            <label for="phone" class="leading-7 text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full bg-white rounded-lg border border-gray-300 focus:border-primary-crimson focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-3 px-4 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="+92 300 1234567">
+                        </div>
+                    </div>
+
+                    <!-- Subject Field -->
+                    <div class="p-2 w-full md:w-1/2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                        <div class="relative">
+                            <label for="subject" class="leading-7 text-sm font-medium text-gray-700">Subject</label>
+                            <select id="subject" name="subject"
+                                class="w-full bg-white rounded-lg border border-gray-300 focus:border-primary-crimson focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-3 px-4 leading-8 transition-colors duration-200 ease-in-out">
+                                <option value="" disabled selected>Select a topic</option>
+                                <option value="sales">Bike Sales Inquiry</option>
+                                <option value="accessories">Accessories Information</option>
+                                <option value="service">Service & Maintenance</option>
+                                <option value="test-ride">Test Ride Booking</option>
+                                <option value="parts">Spare Parts</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="p-2 w-full" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+                        <div class="relative">
+                            <label for="message" class="leading-7 text-sm font-medium text-gray-700">Your
+                                Message</label>
+                            <textarea id="message" name="message"
+                                class="w-full bg-white rounded-lg border border-gray-300 focus:border-primary-crimson focus:ring-2 focus:ring-red-200 h-40 text-base outline-none text-gray-700 py-3 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                                placeholder="Tell us about your inquiry..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="p-2 w-full" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                        <button
+                            class="flex mx-auto text-white bg-primary-crimson border-0 py-3 px-10 focus:outline-none hover:bg-red-700 rounded-lg text-lg font-semibold transition-colors duration-200 ease-in-out">
+                            Send Message
+                            <svg class="w-5 h-5 ml-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="lg:w-3/4 md:w-2/3 mx-auto mt-20" data-aos="fade-up" data-aos-duration="700"
+                data-aos-easing="ease-out-cubic" data-aos-offset="150">
+                <!-- Info Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Location Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center" data-aos="zoom-in"
+                        data-aos-duration="700" data-aos-delay="200">
+                        <div class="w-12 h-12 rounded-full bg-primary-crimson flex items-center justify-center mx-auto mb-4"
+                            data-aos="flip-left" data-aos-duration="800" data-aos-delay="250">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2" data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="300">Our Locations</h3>
+                        <p class="text-gray-600 mb-1" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
+                            <strong>Karachi:</strong> Main Clifton Road</p>
+                        <p class="text-gray-600 mb-1" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                            <strong>Lahore:</strong> DHA Phase 5</p>
+                        <p class="text-gray-600" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+                            <strong>Islamabad:</strong> F-7 Markaz</p>
+                    </div>
+
+                    <!-- Contact Details Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center" data-aos="zoom-in"
+                        data-aos-duration="700" data-aos-delay="300">
+                        <div class="w-12 h-12 rounded-full bg-primary-crimson flex items-center justify-center mx-auto mb-4"
+                            data-aos="flip-left" data-aos-duration="800" data-aos-delay="350">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2" data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="400">Contact Details</h3>
+                        <p class="text-gray-600 mb-1" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+                            <strong>Phone:</strong> +92 300 123 4567</p>
+                        <p class="text-gray-600 mb-1" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                            <strong>WhatsApp:</strong> +92 310 987 6543</p>
+                        <p class="text-gray-600" data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">
+                            <strong>Email:</strong> info@beastriders.com</p>
+                    </div>
+
+                    <!-- Business Hours Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center" data-aos="zoom-in"
+                        data-aos-duration="700" data-aos-delay="400">
+                        <div class="w-12 h-12 rounded-full bg-primary-crimson flex items-center justify-center mx-auto mb-4"
+                            data-aos="flip-left" data-aos-duration="800" data-aos-delay="450">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2" data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="500">Business Hours</h3>
+                        <p class="text-gray-600 mb-1" data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">
+                            <strong>Mon - Fri:</strong> 10:00 AM - 8:00 PM</p>
+                        <p class="text-gray-600 mb-1" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                            <strong>Saturday:</strong> 11:00 AM - 7:00 PM</p>
+                        <p class="text-gray-600" data-aos="fade-up" data-aos-duration="600" data-aos-delay="650">
+                            <strong>Sunday:</strong> 12:00 PM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="mt-12 text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="750">Follow Us</h3>
+                    <div class="inline-flex space-x-4">
+                        <!-- Facebook -->
+                        <a class="text-gray-500 hover:text-primary-crimson transition-colors duration-200"
+                            data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-8 h-8" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="text-gray-500 hover:text-primary-crimson transition-colors duration-200"
+                            data-aos="zoom-in" data-aos-duration="600" data-aos-delay="850">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-8 h-8" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a class="text-gray-500 hover:text-primary-crimson transition-colors duration-200"
+                            data-aos="zoom-in" data-aos-duration="600" data-aos-delay="900">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a class="text-gray-500 hover:text-primary-crimson transition-colors duration-200"
+                            data-aos="zoom-in" data-aos-duration="600" data-aos-delay="950">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="0" class="w-8 h-8" viewBox="0 0 24 24">
+                                <path stroke="none"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="text-gray-600 bg-secondary-silver body-font">
+        <div
+            class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <div class="flex items-center justify-center mr-2">
+                        <img src="./assets/beast-riders-logo.png" style="height: 130px; width: 150px;"
+                            alt="Beast Riders Logo">
+                    </div>
+                </a>
+                <p class="mt-4 text-sm text-gray-700">Premium heavy bikes, accessories, and riding gear. Experience the
+                    thrill of the ride with Beast Riders.</p>
+                <div class="mt-4 flex space-x-4 justify-center md:justify-start">
+                    <a class="text-gray-500 hover:text-primary-crimson">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="text-gray-500 hover:text-primary-crimson">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="text-gray-500 hover:text-primary-crimson">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="text-gray-500 hover:text-primary-crimson">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">QUICK LINKS</h2>
+                    <nav class="list-none mb-10">
+                        <li class="mb-2">
+                            <a href="#home"
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#about"
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">About</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#accessories"
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Accessories</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#contact"
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Contact</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">OUR BRANDS</h2>
+                    <nav class="list-none mb-10">
+                        <li class="mb-2">
+                            <a
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Kawasaki</a>
+                        </li>
+                        <li class="mb-2">
+                            <a
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Yamaha</a>
+                        </li>
+                        <li class="mb-2">
+                            <a
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Honda</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SERVICES</h2>
+                    <nav class="list-none mb-10">
+                        <li class="mb-2">
+                            <a
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Bike
+                                Sales</a>
+                        </li>
+                        <li class="mb-2">
+                            <a
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Accessories</a>
+                        </li>
+                        <li class="mb-2">
+                            <a
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Maintenance</a>
+                        </li>
+                        <li class="mb-2">
+                            <a
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Customization</a>
+                        </li>
+                        <li class="mb-2">
+                            <a
+                                class="text-gray-600 hover:text-primary-crimson hover:font-semibold cursor-pointer transition-colors duration-200">Test
+                                Rides</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTACT INFO</h2>
+                    <nav class="list-none mb-10">
+                        <li class="mb-3 flex items-start">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-4 h-4 mt-1 mr-2 text-primary-crimson" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <span class="text-gray-600 hover:text-primary-crimson cursor-pointer">Beast Riders
+                                Pakistan</span>
+                        </li>
+                        <li class="mb-3 flex items-start">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 mt-1 mr-2 text-primary-crimson" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span
+                                class="text-gray-600 hover:text-primary-crimson cursor-pointer">info@beastriders.com</span>
+                        </li>
+                        <li class="mb-3 flex items-start">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 mt-1 mr-2 text-primary-crimson" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                            <span class="text-gray-600 hover:text-primary-crimson cursor-pointer">+92 300 1234567</span>
+                        </li>
+                        <li class="mb-3 flex items-start">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 mt-1 mr-2 text-primary-crimson" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span class="text-gray-600 hover:text-primary-crimson cursor-pointer">Karachi, Lahore,
+                                Islamabad</span>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary-darkgray">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row items-center">
+                <p class="text-secondary-silver text-sm text-center sm:text-left">
+                    © 2025 Beast Riders — Premium Heavy Bikes & Accessories
+                </p>
+                <div class="sm:ml-auto sm:mt-0 mt-2 flex flex-wrap items-center text-sm text-secondary-silver">
+                    <a class="mr-4 hover:text-primary-crimson cursor-pointer transition-colors duration-200">Developed
+                        by
+                        <b>AEIMAN FAYYAZ</b> </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
 
 
 
@@ -497,6 +1394,17 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+    </script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic'
         });
     </script>
 </body>
